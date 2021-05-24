@@ -1,0 +1,13 @@
+p{
+margin-bottom:5%;
+margin-left:40%;
+font-size: 2vw;
+}
+
+.success{
+    color: green;
+}
+
+.danger{
+    color: red;
+}

@@ -1,0 +1,41 @@
+
+<div class="add-form">
+    <h3>Add Comment</h3>
+        <form (ngSubmit)="insertComment()">
+            <label>Text:</label>
+            <input type="text" name="text" [(ngModel)]="text" >
+            <label>Author:</label>
+            <input type="text" name="author" [(ngModel)]="author" >
+            <button type="submit">Add</button>
+        </form>
+    
+    </div>
+    <div class="table">
+    <h3>Comments Table</h3>
+    <thead>
+    
+        <tr>
+            <th>S.n</th>
+            <th>Content</th>
+            <th>Author Name</th>
+            <th>Identifier</th>
+            <th>Actions</th>
+    
+        </tr>
+    
+    
+    </thead>
+    
+    <tbody>
+        <tr *ngFor="let comment of comments;index as i">
+            <th>{{i+1}}</th>
+            <th>{{comment.text}}</th>
+            <th>{{comment.author}}</th>
+            <th>{{comment.id}}</th>
+            <th><button (click)="deleteComment(comment)">Delete</button></th>
+    
+        </tr>
+      
+    </tbody>
+    
+    </div>

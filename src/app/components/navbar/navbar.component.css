@@ -1,0 +1,11 @@
+nav{
+    margin-left:40%;
+}
+nav,h5{
+    padding: 1%;
+}
+
+li{
+    display: inline-block;
+    padding: 1%;
+}
